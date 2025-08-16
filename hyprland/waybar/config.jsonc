@@ -1,0 +1,83 @@
+{
+    "height": 35,         // Waybar height (to be removed for auto height)
+    "spacing": 5,         // Gaps between modules (4px)
+    "margin-top": 0,
+    "margin-right": 0,
+    "margin-left": 0,
+    "position": "bottom", // Put waybar @ bottom of screen
+
+    "modules-left": [
+        "group/stats",
+        "clock",
+    ],
+
+    "modules-center": [
+        "hyprland/workspaces",
+    ],
+
+    "modules-right": [
+        "network",
+	      "pulseaudio",
+        "tray",
+    ],
+
+    "tray": {
+        "spacing": 10
+    },
+
+    "clock": {
+        // "format": "{:%a, %d %b | %I:%M}",
+        "format": " {:%I:%M} ",
+    },
+
+    "pulseaudio": {
+        "format": "  {volume}%",
+        "format-muted": "  MUTED",
+	      "format-bluetooth": "  {volume}%",
+        "format-bluetooth-muted": "  MUTED",
+        "on-click": "pavucontrol"
+    },
+
+    "memory": {
+        "interval": 1,
+        "format": " {used:0.1f}GB ",
+        "tooltip": true,
+        "tooltip-format": "{used:0.1f}GB\n{total:0.1f}G",
+        "max-length": 10,
+    },
+    
+    "cpu": {
+        "interval": 1,
+        "format": "   {}% ",
+        "max-length": 10
+    },
+
+    "temperature": {
+        "hwmon-path-abs": "/sys/devices/pci0000:00/0000:00:18.3/hwmon",
+        "input-filename": "temp1_input",
+        "interval": 1,
+        "critical-threshold": 90,
+        "warning-threshold": 70,
+        "format-critical": " {temperatureC}°C ",
+        "format-warning": " {temperatureC} °C ",
+        "format": " {temperatureC}°C ",
+    },   
+
+    "custom/gpu-temperature": {
+        "format": " {}°C  ",
+        "exec": "nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader,nounits",
+        "interval": 1,
+    },
+
+    "group/stats": {
+        "modules": [
+            "cpu",
+            "memory",
+            "temperature",
+            "custom/gpu-temperature",
+        ],
+        "orientation": "horizontal",
+    },
+
+
+}
