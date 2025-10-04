@@ -1,0 +1,51 @@
+@import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/DiscordRecolor/DiscordRecolor.css');
+
+/*  ----------- GRUVBOX -----------
+*   gray dark:        40, 40, 40;
+*   gray light:       60, 56, 54;
+*   normal blue:      131, 165, 152;
+*   link blue:        69, 133, 136;
+*   pink:             211, 134, 155;
+*   dark pink:        177, 98, 134;
+*   text white-ish:   235, 219, 178;
+*   text white-er:    251, 241, 199;
+*   green light:      142, 192, 124;
+*   green dark:       104, 157, 106;
+*/
+
+:root {
+  --accentcolor:            177, 98, 134;   /*194,122,194;*/
+  --accentcolor2:           131, 165, 152;  /*109,42,138;*/
+  --linkcolor:              69, 133, 136;   /*194,122,194;*/
+  --mentioncolor:           177, 98, 134;   /*163,101,163;*/
+  --textbrightest:          251, 241, 199;  /*255,255,255; */
+  --textbrighter:           251, 241, 199;  /*255,255,255;*/
+  --textbright:             235, 219, 178;  /*255,204,255;*/
+  --textdark:               211, 134, 155;  /*255,204,226;*/
+  --textdarker:             235, 219, 178;  /*163,101,128;*/
+  --textdarkest:            177, 98, 134;   /*82,41,59;*/
+
+  --backgroundaccent:       211, 134, 155;  /*163,101,163;*/
+  --backgroundprimary:      60, 56, 54;     /*69,41,82;*/ 
+  --backgroundsecondary:    40, 40, 40;     /*50,23,50; */
+  --backgroundsecondaryalt: 40, 40, 40;     /*50,23,50;*/
+  --backgroundtertiary:     40, 40, 40;     /*50,23,50;*/
+  --backgroundfloating:     104, 157, 106;  /*69,41,82;*/
+  --settingsicons:          177, 98, 134;   /*0;*/
+}
+
+::-webkit-scrollbar {
+  width: 10px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  /* On bigger screens, the scrollbar's border radius falls short, 
+  so we put an obscenely large value for the border radius */
+  border-radius: 500px !important;
+  background: rgba(var(--accentcolor), 0.7) !important;
+  background-clip: content-box !important;
+  border: 2px solid transparent !important; /* Margin for the scrollbar */
+}
+
+/* Any custom CSS below here */
+
