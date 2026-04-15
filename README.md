@@ -1,7 +1,7 @@
 # my various dotfiles
 configs i use on my desktop
 
-NOTE: zsh/ may be unnecessary as it probably just contains what `extra/zsh-autosuggestions` and `extra/zsh-syntax-highlighting` would install
+NOTE: `zsh/` may be unnecessary as it probably just contains what `extra/zsh-autosuggestions` and `extra/zsh-syntax-highlighting` would install
 
 ## dependencies (not all-inclusive, just what i remember): 
 ```
