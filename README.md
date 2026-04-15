@@ -1,2 +1,23 @@
-# dots
-dotfiles
+# my various dotfiles
+
+## dependencies (not all-inclusive, just what i remember): 
+
+- waybar
+aur/waybar-module-pacman-updates-git
+
+- mako
+
+- starship
+
+- zsh
+extra/zsh-autosuggestions
+extra/zsh-syntax-highlighting
+
+- kitty
+
+- nvim
+
+- rofi
+
+
+

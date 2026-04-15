@@ -1,0 +1,7 @@
+include ~/.config/sway/things_to_run.conf
+include ~/.config/sway/settings.conf
+include ~/.config/sway/keybinds.conf
+include ~/.config/sway/devices.conf
+include ~/.config/sway/background.conf
+include ~/.config/sway/lockscreen.conf
+include ~/.config/sway/windowrules.conf
